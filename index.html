@@ -44,25 +44,25 @@
             </div>
             <div class="row no-gutters text-center text-white">
               <div class="col-md-3">
-                <div class="port-item p-4 bg-primary text-cente" data-toggle="collapse" data-target="#home">
+                <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
                   <i class="fas fa-home fa-2x"></i>
                   <span class="d-none d-md-block">Home</span>
                 </div>
               </div>
               <div class="col-md-3">
-                <div class="port-item p-4 bg-success text-cente" data-toggle="collapse" data-target="#resume">
+                <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
                   <i class="fas fa-graduation-cap fa-2x"></i>
                   <span class="d-none d-md-block">Resume</span>
                 </div>
               </div>
               <div class="col-md-3">
-                <div class="port-item p-4 bg-warning text-cente" data-toggle="collapse" data-target="#work">
+                <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
                   <i class="fas fa-folder-open fa-2x"></i>
                   <span class="d-none d-md-block">Work</span>
                 </div>
               </div>
               <div class="col-md-3">
-                <div class="port-item p-4 bg-danger text-center" data-toggle="collapse" data-target="#contact">
+                <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
                   <i class="fas fa-envelope fa-2x"></i>
                   <span class="d-none d-md-block">Contact</span>
                 </div>
@@ -72,7 +72,106 @@
         </div>
       </div>
     </header>
-
+    <!-- Home -->
+    <div id="home" class="collapse show">
+      <div class="card bg-primary text-white py-4">
+        <div class="card-body">
+          <h2>Welcome To My Page</h2>
+          <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, provident?</p>
+        </div>
+      </div>
+      <div class="card card-body py-5">
+        <h3>My Skills</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laudantium neque inventore
+          dicta ex delectus!</p>
+        <hr>
+        <div class="skill mb-3">
+          <h4>Html 5</h4>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width:100%;">Advance</div>
+          </div>
+        </div>
+        <div class="skill mb-3">
+          <h4>CSS 3</h4>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width:75%;">Advance</div>
+          </div>
+        </div>
+        <div class="skill mb-3">
+          <h4>JavaScript</h4>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width:50%;">Intermediate</div>
+          </div>
+        </div>
+        <div class="skill mb-3">
+          <h4>PHP</h4>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width:50%;">Intermediate</div>
+          </div>
+        </div>
+        <div class="skill mb-3">
+          <h4>Python</h4>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width:25%;">Beginner</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Resume -->
+    <div id="resume" class="collapse show">
+      <div class="card bg-success text-white py-4">
+        <div class="card-body">
+          <h2>My Resume</h2>
+          <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, provident?</p>
+        </div>
+      </div>
+      <div class="card card-body py-5">
+        <h3>Where Have I Worked?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laudantium neque inventore
+          dicta ex delectus!</p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Devmasters</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="card-text bg-dark p-2 text-white">Position: Full Stack Developer</p>
+                <p class="card-text bg-dark p-2 text-white">Phone: (444) 444-4444</p>
+              </div>
+              <div class="card-footer">
+                <h6 class="text-muted">Dates: 2015 - 2018</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">123 Designs</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="card-text bg-dark p-2 text-white">Position: Web Designer</p>
+                <p class="card-text bg-dark p-2 text-white">Phone: (222) 222-2222</p>
+              </div>
+              <div class="card-footer">
+                <h6 class="text-muted">Dates: 2013 - 2015</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Web Designer Pros</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="card-text bg-dark p-2 text-white">Position: Web Designer</p>
+                <p class="card-text bg-dark p-2 text-white">Phone: (333) 333-3333</p>
+              </div>
+              <div class="card-footer">
+                <h6 class="text-muted">Dates: 2010 - 2013</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     <footer id="main-footer" class="p-5 bg-dark text-white">
       <div class="row">
@@ -94,7 +193,11 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
   <script>
-    $("#year").text(new Date().getFullYear());    
+    $("#year").text(new Date().getFullYear());
+
+    $('.port-item').click(function () {
+      $('.collapse').collapse('hide');
+    });
   </script>
 </body>
 
