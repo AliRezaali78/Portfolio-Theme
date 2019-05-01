@@ -9,6 +9,7 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Portfolio-Theme</title>
 </head>
@@ -186,28 +187,44 @@
           dicta ex delectus!</p>
         <div class="row no-gutters">
           <div class="col-md-3">
-            <img src="https://source.unsplash.com/random/501x500" alt="" class="img-fluid">
+            <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=252" alt="" class="img-fluid">
+            </a>
           </div>
           <div class="col-md-3">
-            <img src="https://source.unsplash.com/random/502x500" alt="" class="img-fluid">
+            <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=253" alt="" class="img-fluid">
+            </a>
           </div>
           <div class="col-md-3">
-            <img src="https://source.unsplash.com/random/503x500" alt="" class="img-fluid">
+            <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=254" alt="" class="img-fluid">
+            </a>
           </div>
           <div class="col-md-3">
-            <img src="https://source.unsplash.com/random/504x500" alt="" class="img-fluid">
+            <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=255" alt="" class="img-fluid">
+            </a>
           </div>
           <div class="col-md-3">
-            <img src="https://source.unsplash.com/random/505x500" alt="" class="img-fluid">
+            <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=256" alt="" class="img-fluid">
+            </a>
           </div>
           <div class="col-md-3">
-            <img src="https://source.unsplash.com/random/500x501" alt="" class="img-fluid">
+            <a href="https://unsplash.it/1200/768.jpg?image=257" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=257" alt="" class="img-fluid">
+            </a>
           </div>
           <div class="col-md-3">
-            <img src="https://source.unsplash.com/random/500x502" alt="" class="img-fluid">
+            <a href="https://unsplash.it/1200/768.jpg?image=258" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=258" alt="" class="img-fluid">
+            </a>
           </div>
           <div class="col-md-3">
-            <img src="https://source.unsplash.com/random/500x503" alt="" class="img-fluid">
+            <a href="https://unsplash.it/1200/768.jpg?image=259" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=259" alt="" class="img-fluid">
+            </a>
           </div>
         </div>
       </div>
@@ -278,12 +295,17 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
   <script>
     $("#year").text(new Date().getFullYear());
 
     $('.port-item').click(function () {
       $('.collapse').collapse('hide');
+    });
+
+    $(document).on('click', '[data-toggle="lightbox"]', function (e) {
+      e.preventDefault();
+      $(this).ekkoLightbox();
     });
   </script>
 </body>
