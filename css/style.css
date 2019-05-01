@@ -12,6 +12,10 @@
     cursor: pointer;
 }
 
+#contact input:focus,
+#contact textarea:focus {
+    box-shadow: inset 0px 0px 5px 0.2rem rgb(220, 53, 69) !important;
+}
 
 /* Medias */
 @media(min-width:1199px) {
